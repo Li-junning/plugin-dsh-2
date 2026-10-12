@@ -1,0 +1,12 @@
+node_modules/
+.runtime/
+.verification/
+.publication/
+dist/
+design/
+*.log
+.env
+.env.*
+*.local
+.DS_Store
+Thumbs.db

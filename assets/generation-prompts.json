@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": {
+    "dark": "Use case: stylized-concept\nAsset type: ultrawide premium desktop chat background, landscape 2560x1440.\nPrimary request: a cinematic Bayern Munich fan atmosphere at the Allianz Arena, richly realistic architectural photography blended with restrained sports poster art. The recognizable inflated diamond membrane facade of Allianz Arena glows deep crimson red at blue hour. View from outside at ground level, wide sweeping arena curve along lower right, wet dark pavement reflecting the red glow, subtle haze and sparse lights. A single flowing red and white Bayern-inspired flag with a blue-white Bavarian diamond inset occupies the FAR RIGHT EDGE, fabric realistic, no lettering or invented club badge. A tiny anonymous player seen from behind in a red jersey at bottom right gives a sense of arrival, no visible face, name, sponsor or number.\nComposition: left 65 percent and center upper area remain beautifully quiet, near-black charcoal/navy negative space for readable chat text. Detailed stadium and flag mainly on far right and lower band. Stadium architecture must be clearly recognizable, not generic football ground. No interface, no cards, no buttons, no typography, no watermark. Premium, atmospheric and mature, no neon gaming aesthetic, no excessive particles.\nColor palette: charcoal #101115, Bayern crimson #dc052d, muted navy, soft white. Keep central region dark.",
+    "light": "Use case: lighting-weather\nAsset type: LIGHT MODE color counterpart of the attached Bayern chat background.\nEdit target: the attached night Allianz Arena image. Change ONLY the illumination and tonal palette into a bright cool silver overcast DAY scene that supports dark text.\nSTRICT INVARIANTS: same camera, same arena in exactly the same position and size, same facade geometry, same flag at exact far right with same fabric folds and pattern, same small anonymous red-shirted player at bottom right, same pavement and trees, same composition and crop. Preserve all geometry and subjects. Do NOT add a Munich skyline, mountains, buildings or other objects. Do NOT replace the setting with jersey fabric.\nThe upper and left empty sky should become soft very pale cool silver #e9edf1 with faint corresponding cloud texture. The stadium remains BAYERN RED (slightly less luminous red fabric membrane in natural daylight), do NOT make the stadium silver-white. Ground becomes pale cool grey wet pavement with subtle desaturated red reflections. Keep strong original red-white-blue identity, matching the dark version. No warm cream or orange sunset cast. Premium restrained architectural daylight image. No new text, UI or crests. Same design, light color scheme only."
+  },
+  "finalEdit": {
+    "tool": "built-in image_gen",
+    "targets": [
+      "allianz-night.png",
+      "allianz-day.png"
+    ],
+    "prompt": "Remove ONLY the line of many small distant crowd figures standing along the ground-floor glass stadium facade. Reconstruct empty glass entrances and empty forecourt. KEEP the ONE large foreground football player in red at lower right exactly unchanged, fully visible from head to shoes. KEEP the red-white-blue flag at the far right with unchanged folds and colors. Preserve camera, framing, stadium geometry, sky, lamps, wet pavement, reflections, original lighting and palette. Final scene has precisely one person: the original foreground red-shirted player. No other people or silhouettes."
+  },
+  "finalFiles": {
+    "dark": "assets/allianz-night.png",
+    "light": "assets/allianz-day.png",
+    "shipping": "WebP copies embedded in lib/client.js"
+  }
+}

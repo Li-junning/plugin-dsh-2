@@ -1,0 +1,10 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const read = name => readFileSync(path.join(root,name),'utf8').replace(/^\uFEFF/,'');
+const uri = name => 'data:image/'+(name.endsWith('.png')?'png':'webp')+';base64,'+readFileSync(path.join(root,name)).toString('base64');
+const art = `:root[data-bh-enabled]{--bh-night-art:url("${uri('assets/allianz-night.webp')}");--bh-day-art:url("${uri('assets/allianz-day.webp')}");}\n`;
+const client = read('src/client.js').replace('__THEME_CSS__',()=>JSON.stringify(art+read('src/theme.css'))).replace('__CREST_URI__',()=>JSON.stringify(uri('assets/crest.png'))).replace('__DATA_CODE__',()=>read('src/data.mjs').replace(/^export /gm,''));
+mkdirSync(path.join(root,'lib'),{recursive:true});writeFileSync(path.join(root,'lib/client.js'),client);
+console.log('Built self-contained native client:',Buffer.byteLength(client),'bytes');
