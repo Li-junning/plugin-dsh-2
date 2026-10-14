@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-10",
+  "checkedAt": "2026-10-13",
+  "opponent": "奥格斯堡",
+  "formation": "4231",
+  "source": "https://fcbayern.com/de/spiele/profis/bundesliga/2026-2027/fc-augsburg-fc-bayern-muenchen-10-10-2026/aufstellung",
+  "report": "https://fcbayern.com/de/news/spielberichte/2026/10/spielbericht-bundesliga-fc-augsburg-fc-bayern",
+  "note": "首发名单及阵型来自拜仁官方；照片来自德甲官方球员页。位置示意供自定义编辑，不是实时追踪。",
+  "players": [
+    {
+      "slot": "p1",
+      "id": "manuel-neuer",
+      "name": "诺伊尔",
+      "fullName": "Manuel Neuer",
+      "number": "1",
+      "photo": "assets/players/manuel-neuer.webp",
+      "profile": "https://www.bundesliga.com/en/player/manuel-neuer",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-0000i4-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "6b7eb3675cd2e80672f0aa5ed7597573e8098683b989fc1f85e25c7f117f822c",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p2",
+      "id": "alphonso-davies",
+      "name": "戴维斯",
+      "fullName": "Alphonso Davies",
+      "number": "19",
+      "photo": "assets/players/alphonso-davies.webp",
+      "profile": "https://www.bundesliga.com/en/player/alphonso-davies",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-002fwz-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "4a05a06a792c205f9361bb255cd34b854d25a467005104bada33731597e7a756",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p4",
+      "id": "jonathan-tah",
+      "name": "塔",
+      "fullName": "Jonathan Tah",
+      "number": "4",
+      "photo": "assets/players/jonathan-tah.webp",
+      "profile": "https://www.bundesliga.com/en/player/jonathan-tah",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-0001up-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "d98bb3bc29db1e16cb3cb7a1c2cc6de5e6c1a37920bfc7ae4e678872fb992e9f",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p5",
+      "id": "dayot-upamecano",
+      "name": "于帕梅卡诺",
+      "fullName": "Dayot Upamecano",
+      "number": "2",
+      "photo": "assets/players/dayot-upamecano.webp",
+      "profile": "https://www.bundesliga.com/en/player/dayot-upamecano",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-0027kl-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "04ff85bb510e6865ec54c81376f7afac179c329283560a5d342f74e855acb134",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p3",
+      "id": "josip-stanisic",
+      "name": "斯塔尼希奇",
+      "fullName": "Josip Stanišić",
+      "number": "44",
+      "photo": "assets/players/josip-stanisic.webp",
+      "profile": "https://www.bundesliga.com/en/player/josip-stanisic",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-002gic-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "4766a0cd028b2a91f3640d237b71a3bff425a51e1d2174aee94d1db33f4f3365",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p6",
+      "id": "aleksandar-pavlovic",
+      "name": "帕夫洛维奇",
+      "fullName": "Aleksandar Pavlović",
+      "number": "45",
+      "photo": "assets/players/aleksandar-pavlovic.webp",
+      "profile": "https://www.bundesliga.com/en/player/aleksandar-pavlovic",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01kah-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "aa39bed4121e94798652391b3dd01345cbfd5bcd7a8349e94403a194f0fe02d7",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p8",
+      "id": "joshua-kimmich",
+      "name": "基米希",
+      "fullName": "Joshua Kimmich",
+      "number": "6",
+      "photo": "assets/players/joshua-kimmich.webp",
+      "profile": "https://www.bundesliga.com/en/player/joshua-kimmich",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-0002f5-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "d12351f27c5b1af8780810bc339dde356eab0958ad9c691cf2659ae4dcb460f6",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p11",
+      "id": "luis-diaz",
+      "name": "迪亚斯",
+      "fullName": "Luis Díaz",
+      "number": "14",
+      "photo": "assets/players/luis-diaz.webp",
+      "profile": "https://www.bundesliga.com/en/player/luis-diaz",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01da7-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "b80c60f7ebdd822e3a5d442e76b7f0b0cd5f136bef32d6157d0a26b7368d9697",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p10",
+      "id": "ismael-saibari",
+      "name": "赛巴里",
+      "fullName": "Ismael Saibari",
+      "number": "34",
+      "photo": "assets/players/ismael-saibari.webp",
+      "profile": "https://www.bundesliga.com/en/player/ismael-saibari",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01dg7-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "963810d02eb61a793051ae6bda3d843b5bcfd8f2c12024dcd772c0f159126547",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p7",
+      "id": "michael-olise",
+      "name": "奥利塞",
+      "fullName": "Michael Olise",
+      "number": "17",
+      "photo": "assets/players/michael-olise.webp",
+      "profile": "https://www.bundesliga.com/en/player/michael-olise",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01r3r-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "12d1634afcb39f6acdf82e7eeb236d08a41ff47826f09400fe852ee0233fbd2b",
+      "dimensions": [
+        195,
+        256
+      ]
+    },
+    {
+      "slot": "p9",
+      "id": "harry-kane",
+      "name": "凯恩",
+      "fullName": "Harry Kane",
+      "number": "9",
+      "photo": "assets/players/harry-kane.webp",
+      "profile": "https://www.bundesliga.com/en/player/harry-kane",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j00zz3-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "sha256": "c8192d81efb58436b9d8f26384c9a3075684b276412a5a60693345d6efd3915d",
+      "dimensions": [
+        195,
+        256
+      ]
+    }
+  ]
+}

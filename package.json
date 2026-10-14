@@ -1,7 +1,7 @@
 {
   "name": "dsh-bayern-home",
-  "version": "0.2.0",
-  "description": "拜仁主场：跟随系统深浅主题的 DSH 对话背景、德甲赛程比分与日历。",
+  "version": "0.5.2",
+  "description": "拜仁主场：DSH 深浅主题、赛程比分、真实球员名片与可编辑战术板。",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -32,7 +32,7 @@
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node --test scripts/data.test.mjs",
+    "test": "node --test scripts/data.test.mjs scripts/studio.test.mjs",
     "pack": "npm pack --pack-destination dist --ignore-scripts",
     "preview": "node scripts/serve.cjs"
   },

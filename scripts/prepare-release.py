@@ -19,8 +19,9 @@ with zipfile.ZipFile(installer,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as arch
     archive.writestr('SHA256SUMS.txt',sha(tgz)+'  '+tgz.name+'\n')
 source=out/f'拜仁主场-{version}-源码与预览.zip'
 files=['package.json','cordis.patch.yml','README.md','NOTICE.md','LICENSE','INSTALL.md','PUBLISH.md','.gitignore','.gitattributes','install.ps1','安装插件.cmd','打开预览.cmd',
-'lib/index.js','lib/client.js','src/client.js','src/theme.css','src/data.mjs','assets/crest.png','assets/allianz-night.png','assets/allianz-day.png','assets/allianz-night.webp','assets/allianz-day.webp','assets/generation-prompts.json',
-'scripts/build.mjs','scripts/data.test.mjs','scripts/serve.cjs','scripts/prepare-release.py','tools/preview.html','tools/vendor/react.production.min.js','tools/vendor/react-dom.production.min.js','tools/vendor/LICENSE.react.txt','docs/images/dark.png','docs/images/light.png']
+'lib/index.js','lib/client.js','src/client.js','src/theme.css','src/data.mjs','src/studio.mjs','src/studio-ui.js','src/lineup.json','assets/crest.png','assets/allianz-night.png','assets/allianz-day.png','assets/allianz-night.webp','assets/allianz-day.webp','assets/generation-prompts.json',
+'scripts/build.mjs','scripts/data.test.mjs','scripts/studio.test.mjs','scripts/serve.cjs','scripts/prepare-release.py','tools/preview.html','tools/vendor/react.production.min.js','tools/vendor/react-dom.production.min.js','tools/vendor/LICENSE.react.txt','docs/images/dark.png','docs/images/light.png','docs/images/lineup-dark.png','docs/images/lineup-light.png']
+files += [p['photo'] for p in json.loads((root/'src/lineup.json').read_text(encoding='utf-8'))['players']]
 with zipfile.ZipFile(source,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
     for name in files:
         archive.write(root/name,'dsh-bayern-home/'+name)

@@ -7,3 +7,7 @@
 离线预览使用 React 18.3.1 / ReactDOM 18.3.1，MIT License，Copyright (c) Meta Platforms, Inc. and affiliates。文件位于 tools/vendor，完整许可见 tools/vendor/LICENSE.react.txt，原始文件头亦含版权声明，仅用于预览，不打入正式插件。
 
 比赛数据：OpenLigaDB 社区维护，https://www.openligadb.de/ 。使用前可核对其使用条款。比分可能延迟；官方赛程入口用于额外核实。
+
+首发球员照片：来自 Bundesliga 官方球员页（https://www.bundesliga.com/en/player/），© 相应权利人，不适用本项目代码的 MIT 许可。原图由 assets.bundesliga.com 提供，工程保存优化 WebP，正式客户端内嵌。11 张照片的原始 URL、个人资料页、内容校验值和尺寸见 src/lineup.json。
+
+参考首发：拜仁官方 2026-10-10 对奥格斯堡阵容，2026-10-13 核对。https://fcbayern.com/de/spiele/profis/bundesliga/2026-2027/fc-augsburg-fc-bayern-muenchen-10-10-2026/aufstellung 。球场上的坐标用于编辑示意，不代表实时位置，也不是后续比赛的固定首发。

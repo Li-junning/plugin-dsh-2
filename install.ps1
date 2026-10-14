@@ -1,6 +1,6 @@
 ﻿param([string]$HarnessFolder = '', [string]$Profile = 'desktop')
 $ErrorActionPreference = 'Stop'
-$taskPackageName = 'dsh-bayern-home-0.2.0.tgz'
+$taskPackageName = 'dsh-bayern-home-0.5.2.tgz'
 $taskPackage = Join-Path $PSScriptRoot $taskPackageName
 if (-not (Test-Path -LiteralPath $taskPackage)) { $taskPackage = Join-Path $PSScriptRoot ('dist\' + $taskPackageName) }
 if (-not (Test-Path -LiteralPath $taskPackage)) { throw '未找到插件安装包，请完整解压安装 ZIP。' }
@@ -32,7 +32,7 @@ if (-not $taskCli) {
 }
 if (-not (Test-Path -LiteralPath $taskCli)) { throw '未找到 DSH 随附 CLI，请核对安装目录。' }
 if (@(Get-Process -Name 'DeepSeek Harness','DSH Desktop' -ErrorAction SilentlyContinue).Count -gt 0) { throw '请先保存工作并完整退出 DeepSeek Harness，再运行安装。' }
-Write-Host '正在安装拜仁主场 0.2.0…'
+Write-Host '正在安装拜仁主场 0.5.2…'
 & $taskCli plugin --profile $Profile add $taskPackage --ignore-scripts
 if ($LASTEXITCODE -ne 0) { throw "安装失败，退出码 $LASTEXITCODE。请保留上面的错误信息。" }
 Write-Host '安装完成。重新打开 DSH，鼠标移到右侧细红条即可展开工具。'

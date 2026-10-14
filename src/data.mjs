@@ -73,3 +73,38 @@ export async function fetchSeason(season, signal) {
   if (!response.ok) throw new Error(`赛程服务暂不可用（${response.status}）`);
   return normalizeMatches(await response.json());
 }
+
+// Only public fixture data is cached; never conversation content or credentials.
+export const CACHE_PREFIX = 'dsh-bayern-home:fixtures:v1:';
+export function readFixtureCache(raw, season, now = Date.now()) {
+  try {
+    if (typeof raw !== 'string' || raw.length > 350000) return null;
+    const value = JSON.parse(raw);
+    if (value.version !== 1 || value.season !== season || !Number.isFinite(value.updatedAt) || value.updatedAt <= 0 || value.updatedAt > now + 300000 || now - value.updatedAt > 30 * 86400000 || !Array.isArray(value.matches) || value.matches.length > 80) return null;
+    const ids = new Set();
+    const matches = value.matches.map(m => {
+      if (!m || !Number.isInteger(m.id) || m.id <= 0 || ids.has(m.id) || !Number.isInteger(m.homeId) || !Number.isInteger(m.awayId) || (m.homeId !== TEAM_ID && m.awayId !== TEAM_ID) || typeof m.finished !== 'boolean') throw Error('Invalid fixture');
+      ids.add(m.id);
+      for (const field of ['home','away','round']) if (typeof m[field] !== 'string' || m[field].length > 160) throw Error('Invalid text');
+      if (m.kickoff !== null && (!utcDate(m.kickoff) || utcDate(m.kickoff) !== m.kickoff)) throw Error('Invalid kickoff');
+      if (m.score !== null && (!Array.isArray(m.score) || m.score.length !== 2 || !m.score.every(n => Number.isInteger(n) && n >= 0 && n <= 99))) throw Error('Invalid score');
+      return {id:m.id,kickoff:m.kickoff,home:m.home,away:m.away,homeId:m.homeId,awayId:m.awayId,finished:m.finished,score:m.score,round:m.round,changed:'',source:`${API_BASE}/getmatchdata/${m.id}`};
+    });
+    return {matches:matches.sort((a,b)=>(a.kickoff || '9999').localeCompare(b.kickoff || '9999')),updatedAt:value.updatedAt};
+  } catch {return null;}
+}
+export function writeFixtureCache(matches, season, updatedAt = Date.now()) {
+  return JSON.stringify({version:1,season,updatedAt,matches});
+}
+export function fixtureGroups(matches, zone = 'Asia/Shanghai') {
+  const groups = new Map();
+  for (const match of matches) {
+    const label = match.kickoff ? new Intl.DateTimeFormat('zh-CN',{timeZone:zone,year:'numeric',month:'long'}).format(new Date(match.kickoff)) : '时间待定';
+    if (!groups.has(label)) groups.set(label,[]);
+    groups.get(label).push(match);
+  }
+  return [...groups].map(([label,matches])=>({label,matches}));
+}
+export function canRevealScore(match, now = Date.now()) {
+  return match.finished || !!(match.kickoff && Date.parse(match.kickoff) <= now);
+}
