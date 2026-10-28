@@ -1,3 +1,4 @@
+import {Script} from 'node:vm';
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
@@ -6,7 +7,10 @@ const read = name => readFileSync(path.join(root,name),'utf8').replace(/^\uFEFF/
 const uri = name => 'data:image/'+(name.endsWith('.png')?'png':'webp')+';base64,'+readFileSync(path.join(root,name)).toString('base64');
 const art = `:root[data-bh-enabled]{--bh-night-art:url("${uri('assets/allianz-night.webp')}");--bh-day-art:url("${uri('assets/allianz-day.webp')}");}\n`;
 const lineup=JSON.parse(read('src/lineup.json'));
-const photos=Object.fromEntries(lineup.players.map(p=>[p.id,uri(p.photo)]));
-const client = read('src/client.js').replace('__LINEUP_CODE__',()=>`const OFFICIAL_LINEUP=${JSON.stringify(lineup)}, PLAYER_PHOTOS=${JSON.stringify(photos)};`).replace('__THEME_CSS__',()=>JSON.stringify(art+read('src/theme.css'))).replace('__CREST_URI__',()=>JSON.stringify(uri('assets/crest.png'))).replace('__DATA_CODE__',()=>read('src/data.mjs').replace(/^export /gm,'')).replace('__STUDIO_CODE__',()=>read('src/studio.mjs').replace(/^export /gm,'')).replace('__STUDIO_UI__',()=>read('src/studio-ui.js'));
+const reserves=JSON.parse(read('src/reserves.json'));
+const squad={...reserves,players:[...reserves.players,...lineup.players]};
+const photos=Object.fromEntries(squad.players.filter(p=>p.photo).map(p=>[p.id,uri(p.photo)]));
+const client = read('src/client.js').replace('__LINEUP_CODE__',()=>`const OFFICIAL_LINEUP=${JSON.stringify(lineup)}, OFFICIAL_SQUAD=${JSON.stringify(squad)}, PLAYER_PHOTOS=${JSON.stringify(photos)};`).replace('__THEME_CSS__',()=>JSON.stringify(art+read('src/theme.css'))).replace('__CREST_URI__',()=>JSON.stringify(uri('assets/crest.png'))).replace('__DATA_CODE__',()=>read('src/data.mjs').replace(/^export /gm,'')).replace('__STUDIO_CODE__',()=>[read('src/studio.mjs'),read('src/work.mjs'),read('src/board-export.mjs').replace(/^import[^\n]+\n/gm,'')].join('\n').replace(/^export /gm,'')).replace('__STUDIO_UI__',()=>read('src/studio-ui.js')+'\n'+read('src/work-ui.js'));
+new Script(client,{filename:'lib/client.js'});
 mkdirSync(path.join(root,'lib'),{recursive:true});writeFileSync(path.join(root,'lib/client.js'),client);
 console.log('Built self-contained native client:',Buffer.byteLength(client),'bytes');

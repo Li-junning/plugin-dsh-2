@@ -10,4 +10,6 @@
 
 首发球员照片：来自 Bundesliga 官方球员页（https://www.bundesliga.com/en/player/），© 相应权利人，不适用本项目代码的 MIT 许可。原图由 assets.bundesliga.com 提供，工程保存优化 WebP，正式客户端内嵌。11 张照片的原始 URL、个人资料页、内容校验值和尺寸见 src/lineup.json。
 
+替补资料：拜仁官方一线队名单，2026-10-23 核对，https://fcbayern.com/en/teams/first-team 。13 名参考首发以外球员、个人资料链接及官方照片来源见 src/reserves.json。官方照片版权属于原权利人，不适用代码 MIT 许可。中文简称仅用于界面展示。
+
 参考首发：拜仁官方 2026-10-10 对奥格斯堡阵容，2026-10-13 核对。https://fcbayern.com/de/spiele/profis/bundesliga/2026-2027/fc-augsburg-fc-bayern-muenchen-10-10-2026/aufstellung 。球场上的坐标用于编辑示意，不代表实时位置，也不是后续比赛的固定首发。

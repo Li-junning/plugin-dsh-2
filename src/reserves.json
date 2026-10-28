@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-10-23",
+  "season": "2026/27",
+  "source": "https://fcbayern.com/en/teams/first-team",
+  "totalSquadPlayers": 24,
+  "referenceLineupDate": "2026-10-10",
+  "note": "拜仁官方一线队名单中参考首发以外的13人，作为可编辑替补池；不代表某场比赛报名或可出场状态。戴伯号码47按德甲官方个人资料核对。布朗照片源404，显示默认人像，可上传替换。",
+  "players": [
+    {
+      "id": "sven-ulreich",
+      "name": "乌尔赖希",
+      "fullName": "Sven Ulreich",
+      "number": "26",
+      "role": "门将",
+      "profile": "https://fcbayern.com/en/teams/first-team/sven-ulreich",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-0000lt-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247520/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/sven_ulreich.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/sven-ulreich",
+      "photo": "assets/players/sven-ulreich.webp",
+      "sha256": "1a007296fc7928809145f31f79b17362ab9a2a3fd80997bd0347b89319a75826",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "jonas-urbig",
+      "name": "乌尔比希",
+      "fullName": "Jonas Urbig",
+      "number": "40",
+      "role": "门将",
+      "profile": "https://fcbayern.com/en/teams/first-team/jonas-urbig",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01jm5-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247491/cms/public/images/fcbayern-com/players/spielerportraits/teaser/jonas-urbig.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/jonas-urbig",
+      "photo": "assets/players/jonas-urbig.webp",
+      "sha256": "da0a10e5e0ba873c016cf0bcdddbd6d98916d13ec9ef8d9d3d8d1323509ad056",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "minjae-kim",
+      "name": "金玟哉",
+      "fullName": "Minjae Kim",
+      "number": "3",
+      "role": "后卫",
+      "profile": "https://fcbayern.com/en/teams/first-team/minjae-kim",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01ae6-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247484/cms/public/images/fcbayern-com/players/spielerportraits/teaser/minjae-kim.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/minjae-kim",
+      "photo": "assets/players/minjae-kim.webp",
+      "sha256": "6f8a761b3b2f2e4cb2ae08be69befc0d87adc258f43f1520393063fc5f5f413d",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "nathaniel-brown",
+      "name": "布朗",
+      "fullName": "Nathaniel Brown",
+      "number": "11",
+      "role": "后卫",
+      "profile": "https://fcbayern.com/en/teams/first-team/nathaniel-brown",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01dnm-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1786621024/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/nathaniel-brown.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/nathaniel-brown",
+      "photoStatus": "unavailable"
+    },
+    {
+      "id": "hiroki-ito",
+      "name": "伊藤洋辉",
+      "fullName": "Hiroki Ito",
+      "number": "21",
+      "role": "后卫",
+      "profile": "https://fcbayern.com/en/teams/first-team/hiroki-ito",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01ill-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247532/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/hiroki-ito.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/hiroki-ito",
+      "photo": "assets/players/hiroki-ito.webp",
+      "sha256": "3616d46173ee1a7a059bb129b5c9caaa532ca2861cdc94ad64a9e208f9aaddcd",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "sacha-boey",
+      "name": "博伊",
+      "fullName": "Sacha Boey",
+      "number": "23",
+      "role": "后卫",
+      "profile": "https://fcbayern.com/en/teams/first-team/sacha-boey",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01dzw-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1789129853/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/sacha-boey.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/sacha-boey",
+      "photo": "assets/players/sacha-boey.webp",
+      "sha256": "91aa6e976d820de21fe0736e29fcb42d1b246388801f21137d4a515f9dd32c4c",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "tom-bischof",
+      "name": "比朔夫",
+      "fullName": "Tom Bischof",
+      "number": "8",
+      "role": "中场",
+      "profile": "https://fcbayern.com/en/teams/first-team/tom-bischof",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01k2f-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247481/cms/public/images/fcbayern-com/players/spielerportraits/teaser/tom-bischof.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/tom-bischof",
+      "photo": "assets/players/tom-bischof.webp",
+      "sha256": "9e0fda10146933a1052a221f7dedce6c15a8626c6081b52c983ad235407956d7",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "jamal-musiala",
+      "name": "穆西亚拉",
+      "fullName": "Jamal Musiala",
+      "number": "10",
+      "role": "中场",
+      "profile": "https://fcbayern.com/en/teams/first-team/jamal-musiala",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-002gcr-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785249145/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/jamal_musiala.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/jamal-musiala",
+      "photo": "assets/players/jamal-musiala.webp",
+      "sha256": "8c63688911e6a5cd49aae3ab51bedf63dfcc0c8331911c8a84048fb49df5a609",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "konrad-laimer",
+      "name": "莱默尔",
+      "fullName": "Konrad Laimer",
+      "number": "27",
+      "role": "中场",
+      "profile": "https://fcbayern.com/en/teams/first-team/konrad-laimer",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-0027t1-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247526/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/konrad-laimer.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/konrad-laimer",
+      "photo": "assets/players/konrad-laimer.webp",
+      "sha256": "d7b4f1ac865b806ae5ebbdaa146dfb2008e0bccb99711b2862d121e507eca428",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "bara-sapoko-ndiaye",
+      "name": "恩迪亚耶",
+      "fullName": "Bara Sapoko Ndiaye",
+      "number": "39",
+      "role": "中场",
+      "profile": "https://fcbayern.com/en/teams/first-team/bara-sapoko-ndiaye",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j0257k-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1786621024/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/bara-sapoko-ndiaye.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/bara-sapoko-ndiaye",
+      "photo": "assets/players/bara-sapoko-ndiaye.webp",
+      "sha256": "5aff9e0c0cb27ccd3d6a0108880fcc95a1812e7f36d0b64496d541ab10cafa55",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "lennart-karl",
+      "name": "卡尔",
+      "fullName": "Lennart Karl",
+      "number": "42",
+      "role": "中场",
+      "profile": "https://fcbayern.com/en/teams/first-team/lennart-karl",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01ud5-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785249224/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/lennart-karl.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/lennart-karl",
+      "photo": "assets/players/lennart-karl.webp",
+      "sha256": "ce5d9d60209344649f032b9602d06b33ca129624dc3cf82dc01e82d29ec57df7",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    },
+    {
+      "id": "david-santos-daiber",
+      "name": "戴伯",
+      "fullName": "David Santos Daiber",
+      "number": "47",
+      "role": "中场",
+      "profile": "https://fcbayern.com/en/teams/first-team/david-santos-daiber",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-j01z07-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1790950559/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/david-santos.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/david-santos-daiber",
+      "photo": "assets/players/david-santos-daiber.webp",
+      "sha256": "731204b06bd06dcf6494a24c9e15f0a450f9b4ef8b7e0d0e07314b5d6e203bc5",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded",
+      "numberSource": "https://www.bundesliga.com/en/player/david-santos-daiber",
+      "numberNote": "拜仁官网号码位置显示DS；德甲官方球员页数字号码47。"
+    },
+    {
+      "id": "serge-gnabry",
+      "name": "格纳布里",
+      "fullName": "Serge Gnabry",
+      "number": "7",
+      "role": "前锋",
+      "profile": "https://fcbayern.com/en/teams/first-team/serge-gnabry",
+      "photoSource": "https://assets.bundesliga.com/player/dfl-obj-0027g6-dfl-clu-00000g-dfl-sea-0001ka-body.png?crop=10%2C0%2C75%2C80&fit=256%2C256",
+      "bayernPhotoSource": "https://img.fcbayern.com/image/upload/f_auto/q_auto/ar_1%3A1%2Cc_fill%2Cg_custom%2Cw_768/v1785247520/cms/public/images/fcbayern-com/players/spielerportraits/ganzkoerper/serge_gnabry.png",
+      "photoProfile": "https://www.bundesliga.com/en/player/serge-gnabry",
+      "photo": "assets/players/serge-gnabry.webp",
+      "sha256": "2390a98f4399d356fc263bd40a9a1513ad32795d109129eff51138fb351d983a",
+      "dimensions": [
+        195,
+        256
+      ],
+      "photoStatus": "embedded"
+    }
+  ]
+}

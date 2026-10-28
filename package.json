@@ -1,7 +1,7 @@
 {
   "name": "dsh-bayern-home",
-  "version": "0.5.2",
-  "description": "拜仁主场：DSH 深浅主题、赛程比分、真实球员名片与可编辑战术板。",
+  "version": "0.18.0",
+  "description": "拜仁主场：赛程、球员卡牌阵型、工作便签与常用指令、本机备份。",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -32,9 +32,10 @@
   },
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node --test scripts/data.test.mjs scripts/studio.test.mjs",
+    "test": "node --test scripts/data.test.mjs scripts/studio.test.mjs scripts/bench.test.mjs scripts/work.test.mjs",
     "pack": "npm pack --pack-destination dist --ignore-scripts",
-    "preview": "node scripts/serve.cjs"
+    "preview": "node scripts/serve.cjs",
+    "verify:ui": "node scripts/verify-ui.cjs"
   },
   "repository": {
     "type": "git",

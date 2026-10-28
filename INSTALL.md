@@ -1,50 +1,35 @@
-# 安装拜仁主场 0.5.2
+# 安装拜仁主场 0.18.0
 
 ## Windows 安装包
 
-1. 先安装并运行过 DeepSeek Harness，再保存工作、完整退出应用。
-2. 从 [v0.5.2 Release](https://github.com/Li-junning/plugin-dsh-2/releases/tag/v0.5.2) 下载并解压 `dsh-bayern-home-0.5.2-windows.zip`。
-3. 双击 `安装插件.cmd`，必要时输入 DeepSeek Harness.exe 所在文件夹。
-4. 安装成功后重新打开 DSH。
+1. 先安装并运行过 DeepSeek Harness Desktop。
+2. 从 [v0.18.0 Release](https://github.com/Li-junning/plugin-dsh-2/releases/tag/v0.18.0) 下载 `dsh-bayern-home-0.18.0-windows.zip` 并完整解压。
+3. 保存工作并完整退出 DSH。
+4. 双击 `安装插件.cmd`；找不到 DSH 时按提示输入程序所在文件夹。
+5. 安装成功后重新打开 DSH。
 
-安装默认使用 desktop 配置。若你使用其他配置，可以执行：
+本包不含 DSH 主程序。安装脚本调用 DSH 随附 CLI，安装同目录的 `dsh-bayern-home-0.18.0.tgz`；不会关闭应用或修改模型配置。
 
-```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Profile "你的配置名称"
-```
-
-脚本只调用 DSH 随附 CLI 安装本地 tgz，不会关闭应用、修改模型配置、接受兼容性豁免或停用其他插件。
-
-## GitHub 安装
-
-保存工作并完整退出 DSH 后执行以下命令更新到 v0.5.2，再重新打开应用：
+## GitHub 命令安装
 
 ```powershell
-dsh plugin --profile desktop add "github:Li-junning/plugin-dsh-2#v0.5.2" --ignore-scripts
+dsh plugin --profile desktop add "github:Li-junning/plugin-dsh-2#v0.18.0" --ignore-scripts
 ```
 
-桌面版也可以找到安装目录后，使用 `resources\runtime\cli\bin\dsh.cmd` 代替上面的 `dsh`。
+桌面版随附 CLI 为安装目录下的 `resources/runtime/cli/bin/dsh.cmd`。如果该命令未在 PATH 中，使用完整 CLI 路径执行同样参数。
 
-安装前完整退出 DSH，完成后重新打开。如果网络无法访问 GitHub，请使用 Releases 的 Windows ZIP 或 tgz 本地安装方式。
-
-## 本地 tgz
-
-使用本地或 Release 中的 `dsh-bayern-home-0.5.2.tgz` 后，在文件所在目录运行：
+## 本地 tgz 安装
 
 ```powershell
-dsh plugin --profile desktop add ".\dsh-bayern-home-0.5.2.tgz" --ignore-scripts
+dsh plugin --profile desktop add ".\dsh-bayern-home-0.18.0.tgz" --ignore-scripts
 ```
 
-## 卸载
+使用其他配置时将 `desktop` 替换成对应名称。更新保留本机设置与用户数据；建议先在主场设置及工作助手中分别导出备份。
 
-```powershell
-dsh plugin --profile desktop remove dsh-bayern-home
-```
+卸载可在 DSH 插件管理器中操作。
 
-卸载后重新打开 DSH。插件保存在浏览器本机存储中的偏好、阵型与名片不会主动删除。
+## 数据与验证
 
-## 确认安装
+覆盖拜仁德甲、欧冠和德国杯；后续对阵随数据源更新。球员为附核对日期的参考资料，不是实时首发。
 
-新会话中应出现球场背景、拜仁队徽和右上角「我的主场」。鼠标移到右侧细红条，赛程与比分、战术灵感、专注阅读三个工具应展开，并可通过图钉固定。主场入口旁应有可隐藏的迷你比赛卡。面板中的「战术」「名片」「布局」分别提供编辑战术板、PNG 名片和布局定制。已有对话的背景会自动减弱；专注阅读开启时背景会隐藏。
-
-目前验证宿主为 Windows DeepSeek Harness Desktop 0.2.0-rc.2。若宿主报告其他旧插件不兼容，请处理提示中点名的插件；本安装器不会替你接受风险豁免。
+0.18.0 通过 86 项单元测试、124 项界面检查及包校验；真实宿主冷启动尚未重验。其他宿主版本的兼容性请以实际运行情况为准。
